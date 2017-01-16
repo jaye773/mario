@@ -17,11 +17,11 @@ public class Genome {
         gene.innovation = innovation;
 
         List<Integer> nodesForInput = new ArrayList<>();
-        nodesForInput.addAll(getHiddinNodes());
+        nodesForInput.addAll(getHiddenNodes());
         nodesForInput.addAll(getInputNodes());
 
         List<Integer> nodesForOutput = new ArrayList<>();
-        nodesForOutput.addAll(getHiddinNodes());
+        nodesForOutput.addAll(getHiddenNodes());
         nodesForOutput.addAll(getOutputNodes());
 
         gene.out = nodesForOutput.get(new Random().nextInt(nodesForOutput.size()));
@@ -52,7 +52,7 @@ public class Genome {
         genes.add(goingIn);
     }
 
-    Set<Integer> getHiddinNodes() {
+    Set<Integer> getHiddenNodes() {
         List<Integer> outputs = genes.stream().map(gene -> gene.out).distinct().collect(Collectors.toList());
         List<Integer> inputs = genes.stream().map(gene -> gene.into).distinct().collect(Collectors.toList());
         return outputs.stream().filter(out -> inputs.contains(out)).collect(Collectors.toSet());

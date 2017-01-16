@@ -1,3 +1,4 @@
+package java;
 
 import java.com.mario.Library;
 
@@ -9,8 +10,8 @@ import static junit.framework.Assert.assertTrue;
  *
  * @author jaye, @date 12/26/16 9:29 PM
  */
-public class LibraryTest {
 
+public class LibraryTest {
     public void testSomeLibraryMethod() {
         Library classUnderTest = new Library();
         assertTrue("someLibraryMethod should return 'true'", classUnderTest.someLibraryMethod());
