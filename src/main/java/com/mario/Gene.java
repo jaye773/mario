@@ -1,3 +1,5 @@
+package java.com.mario;
+
 public class Gene {
     int into;
     int out;

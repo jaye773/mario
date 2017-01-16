@@ -1,4 +1,6 @@
 
+import java.com.mario.Library;
+
 import static junit.framework.Assert.assertTrue;
 
 /*
