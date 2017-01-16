@@ -1,4 +1,4 @@
-package java.com.mario;
+package com.mario;
 
 import java.util.ArrayList;
 import java.util.List;

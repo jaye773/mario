@@ -1,4 +1,4 @@
-package java.com.mario;
+package com.mario;
 
 public class Fitness {
 
