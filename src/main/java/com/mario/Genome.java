@@ -6,6 +6,10 @@ import java.util.Random;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ *A Genome is a collection of genes.
+ */
+
 public class Genome {
     List<Gene> genes = new ArrayList<Gene>();
 

@@ -11,12 +11,15 @@ import static org.junit.Assert.assertTrue;
  */
 public class GenomeTest {
 
+   /**
+    *Testing if {@link com.mario.Genome} constructs a valid Genome
+    */
    @Test
    public void testGenomeConstructor() {
-      assertTrue("Genome size error outputs > inputs",
+      assertTrue("Genome size outputs > inputs",
               new Genome(3, 4).genes.size() == 4);
 
-      assertTrue("Genome size error outputs < inputs",
+      assertTrue("Genome size outputs < inputs",
               new Genome(4, 3).genes.size() == 4);
 
       assertTrue("Inputs Ordered?",
@@ -32,6 +35,9 @@ public class GenomeTest {
                       == 3);
    }
 
+   /**
+    * Testing if a new connection between two nodes is added correctly.
+    */
    @Test
    public void testAddGeneConnection() {
       Genome addedGene = new Genome(4,3);
