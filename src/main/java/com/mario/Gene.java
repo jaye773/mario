@@ -6,21 +6,21 @@ package com.mario;
  * inheriting and copying of genes is what powers evolution. The goal of an algorithm such
  * as NEAT is to harness this evolutionary power to evolve a neural network so that it
  * can learn to perform a particular task.
- *
+ * <p>
  * Therefore we need to be able to represent a neural network as a collection of genes.
  * There is no one way to do this but in this case we have chosen to design our genes
  * as follows.
- *
+ * <p>
  * Each gene specifies a connection between two nodes. The 'into' property is telling us
  * the number of the node that this connection is coming from, 'out' the node this
  * connection is going to.
- *
+ * <p>
  * The innovation number is mostly concerned with creating unique genes. It is incremented
  * every time a gene is created globally.
- *
+ * <p>
  * A connection can also have a weight. This is not related to the mechanics of how genes
  * work but is a property of the neural network, describing the strength of the connection.
- *
+ * <p>
  * A gene can also be switched on and off as a result of mating.
  */
 
